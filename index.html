@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Sidebar Menu</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".hamburger .fas").click(function () {
+        $(".wrapper").addClass("active")
+      })
+
+      $(".wrapper .sidebar .close").click(function () {
+        $(".wrapper").removeClass("active")
+      })
+    })
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="sidebar">
+      <div class="bg_shadow"></div>
+      <div class="sidebar__inner">
+        <div class="close">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="profile_info">
+          <div class="profile_data">
+            <p class="name">Lorem <br> Ipsum</p>
+          </div>
+          
+        </div>
+        <ul class="siderbar_menu">
+          <li><a href="#">
+
+              <div class="title">About</div>
+            </a></li>
+          <li><a href="#" class="active">
+
+              <div class="title">Services</div>
+            </a></li>
+          <li><a href="#">
+
+              <div class="title">Cuisions</div>
+            </a></li>
+          <li><a href="#">
+
+              <div class="title">Gallery</div>
+            </a></li>
+          <li><a href="#">
+
+              <div class="title">Contact</div>
+            </a></li>
+          <li><a href="#">
+
+              <div class="title">Book</div>
+            </a></li>
+
+        </ul>
+        <div class="profile_info">
+          <div class="profile_data">
+            <div class="btn ">Cart</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main_container">
+      <div class="top_navbar">
+        <div class="hamburger">
+          <div class="hamburger__inner">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+        <ul class="menu">
+          <p>Lorem</p>
+        </ul>
+        <ul class="right_bar">
+
+          <li><i class="fas fa-shopping-cart"></i></li>
+        </ul>
+      </div>
+
+      <div class="container">
+        <div class class="row1">
+          <div class="item">
+            <div class="heading">
+              What are you <br> having for lunch?
+            </div>
+            <div class="cards">
+              <div class="card">
+                <img src="https://imgk.timesnownews.com/story/chad-montano-lP5MCM6nZ5A-unsplash.jpg?tr=w-600,h-450,fo-auto" alt="Mexican taco"
+                  class="profile-logo" />
+                <h2 class="cuisineName" style="color: #272727;">Mexican taco </h2>
+              </div>
+              <div class="card">
+                <img src="https://static.punjabkesari.in/multimedia/2019_6image_14_21_266147518farmhouse-pizza-ll.jpg" alt="farmhouse Pizza"
+                  class="profile-logo" />
+                <h2 class="cuisineName" style="color: #272727;">farmhouse Pizza </h2>
+              </div>
+              <div class="card">
+                <img src="https://spicecravings.com/wp-content/uploads/2020/06/Indian-Spiced-Chicken-Burger-5.jpg" alt="chicken burger"
+                  class="profile-logo" />
+                <h2 class="cuisineName" style="color: #272727;">chicken burger </h2>
+              </div>
+              <div class="card">
+                <img src="https://static.toiimg.com/thumb/55046506.cms?width=1200&height=900" alt="loaded Nachos"
+                  class="profile-logo" />
+                <h2 class="cuisineName" style="color: #272727;">loaded Nachos</h2>
+              </div>
+              <div class="card">
+                <img src="https://www.whiskaffair.com/wp-content/uploads/2020/03/Hakka-Noodles-2-3.jpg" alt="hakka noodles"
+                  class="profile-logo" />
+                <h2 class="cuisineName" style="color: #272727;">hakka noodles </h2>
+              </div>
+              
+
+            </div>
+          </div>
+          
+        </div>
+        <div class="item2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quae obcaecati eos, rem cupiditate
+            saepe
+          </p>
+          <div class="line"></div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
